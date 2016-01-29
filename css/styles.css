@@ -51,17 +51,13 @@ form {
   border-radius: 5px;
 }
 
-#pizzaReceipt {
-  float: left;
-}
-
-img {
-  float:right;
-}
-
 #pickUp {
   font-size: 14px;
   font-style: italic;
   text-align: center;
   color: #FF7471;
+}
+
+.img-responsive {
+  float: right;
 }
