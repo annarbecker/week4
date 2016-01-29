@@ -29,6 +29,16 @@ Pizza.prototype.noQuantity = function() {
   }
 }
 
+Pizza.prototype.fullOrder = function () {
+  return this.quantity + ", " + this.size + ", " + this.toppings;
+}
+
+
+function Contact(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     var quantity = parseInt($("input#quantity").val());
@@ -49,7 +59,7 @@ $(document).ready(function() {
 
     $(".pizzaPrice").text(orderPrice);
     $("#receipt").show();
-    $("#pizzaQuantity").text(quantity);
+    $(".pizzaQuantity").text(quantity);
     $("#pizzaSize").text(size);
     $("#pizzaToppings").text(toppings);
     $("#pizzaReceipt").show();
