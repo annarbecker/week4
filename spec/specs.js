@@ -16,19 +16,8 @@ describe('Pizza', function () {
       expect(testPizza.noQuantity()).to.equal(true);
   });
 
-  it("add the fullOrder method to all orders", function () {
-    var testPizza = new Pizza(2, "medium", ["pepperoni", "cheese", "olives"]);
-  });
-});
-
-describe('Contact', function () {
-  it("create a new contact with the given properties", function () {
-    var testContact = new Contact("Rita", "Moreno");
-    expect(testContact.firstName).to.equal("Rita");
-    expect(testContact.lastName).to.equal("Moreno");
-  });
-  it("adds the fullName method to a contact", function () {
-    var testContact = new Contact("Sherlock", "Holmes");
-    expect(testContact.fullName()).to.equal("Sherlock Holmes");
+  it("will return true if the user enters a negative quantity", function() {
+      var testPizza = new Pizza(-2, "medium", ["pepperoni", "cheese", "olives"]);
+      expect(testPizza.negQuantity()).to.equal(true);
   });
 });

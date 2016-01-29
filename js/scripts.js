@@ -24,6 +24,9 @@ Pizza.prototype.noQuantity = function() {
   if(isNaN(this.quantity)){
     return true;
   }
+}
+
+Pizza.prototype.negQuantity = function() {
   if(this.quantity <= 0){
     return true;
   }
