@@ -29,25 +29,11 @@ Pizza.prototype.noQuantity = function() {
   }
 }
 
-Pizza.prototype.fullOrder = function () {
-  return this.quantity + ", " + this.size + ", " + this.toppings;
-}
-
-function Contact(firstName, lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  // this.order = [];
-}
-
-Contact.prototype.fullName = function() {
-  return this.firstName + " " + this.lastName;
-}
-
 
 $(document).ready(function() {
-  // contact form for user info
 
   $("form#pizzaOrder").submit(function(event) {
+
     var quantity = parseInt($("input#quantity").val());
     var size = $("select#size").val();
     var toppings = [];
