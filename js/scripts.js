@@ -45,8 +45,12 @@ $(document).ready(function() {
     });
     var newPizza = new Pizza(quantity, size, toppings);
     var orderPrice = newPizza.price();
-    if(newPizza.noQuantity()){
+    if(newPizza.noQuantity()) {
       alert("Please enter how many pizzas you would like to order. The order minimum is 1 pizza.");
+      return false;
+    }
+    if(newPizza.negQuantity()) {
+      alert("Please enter a valid quantity number. The order minimum is 1 pizza.");
       return false;
     }
     event.preventDefault();
