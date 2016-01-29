@@ -10,4 +10,9 @@ describe('Pizza', function () {
     var testPizza = new Pizza(2, "medium", ["pepperoni", "cheese", "olives"]);
     expect(testPizza.price()).to.equal(26);
   });
+
+  it("will return true if the user does not enter a quantity", function() {
+      var testPizza = new Pizza(undefined, "medium", ["pepperoni", "cheese", "olives"]);
+      expect(testPizza.noQuantity()).to.equal(true);
+  });
 });

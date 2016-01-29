@@ -20,6 +20,12 @@ Pizza.prototype.price = function() {
   return price * this.quantity
 }
 
+Pizza.prototype.noQuantity = function() {
+  if(isNaN(this.quantity)){
+    return true;
+  }
+}
+
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     var quantity = parseInt($("input#quantity").val());
