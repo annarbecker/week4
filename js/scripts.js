@@ -24,6 +24,9 @@ Pizza.prototype.noQuantity = function() {
   if(isNaN(this.quantity)){
     return true;
   }
+  if(this.quantity <= 0){
+    return true;
+  }
 }
 
 $(document).ready(function() {
@@ -36,7 +39,10 @@ $(document).ready(function() {
     });
     var newPizza = new Pizza(quantity, size, toppings);
     var orderPrice = newPizza.price();
-
+    if(newPizza.noQuantity()){
+      alert("Please enter how many pizzas you would like to order. The order minimum is 1 pizza.");
+      return false;
+    }
     event.preventDefault();
 
     toppings = toppings.join(", ");
