@@ -6,17 +6,19 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Build Your Own Pizza</title>
+    <title>Pizza Pronto</title>
   </head>
   <body class ="container">
     <div class="jumbotron">
-      <h1>Build Your Own Pizza</h1>
+      <h1>Pizza Pronto</h1>
     </div>
     <div class="row">
       <div class="col-md-3, col-sm-3">
       </div>
       <div class="col-md-8, col-sm-8">
         <form id="pizzaOrder">
+          <h2>Place your pizza order</h2>
+          <hr>
           <div class="form-group">
             <label for="quantity">Enter the number of pizzas to order</label>
             <input id="quantity" type="number" placeholder="number of pizzas">
@@ -24,7 +26,7 @@
           <div class="form-group">
             <label for="size">Select a size</label>
             <select class="form-control" id="size">
-              <option value="1">Small</option>
+              <option value="small">Small</option>
               <option value="medium">Medium</option>
               <option value="large">Large</option>
             </select>
@@ -64,19 +66,16 @@
           <button type="submit" class="btn">Place Order</button>
           </div>
         </form>
-        <hr>
         <div id="receipt">
-          <h2>Pizza Place</h2>
+          <h2>Pizza Pronto</h2>
           <h3>Order Confirmation<p>
           <h4>Quantity: <span id="pizzaQuantity"></span></span></h4>
           <h4>Size: <span id="pizzaSize"></span></span></h4>
           <h4>Toppings: <span id="pizzaToppings"><span></h4>
-
-        </div>
-        <div id="result">
-          <p><span id="pizza-order"></span></p>
           <h3>Total: $<span class="pizzaPrice"></span></h3>
+        <button id="placeAnotherOrder" type="button" class="btn btn-default center-block">Place Another Order</button>
         </div>
+
       </div>
     </div>
   </bod>

@@ -31,16 +31,20 @@ $(document).ready(function() {
     var newPizza = new Pizza(quantity, size, toppings);
     var orderPrice = newPizza.price();
 
-    $(".pizzaPrice").text(orderPrice);
-    $("#result").show();
-
     event.preventDefault();
 
     toppings = toppings.join(", ");
 
+    $(".pizzaPrice").text(orderPrice);
+    $("#receipt").show();
     $("#pizzaQuantity").text(quantity);
     $("#pizzaSize").text(size);
     $("#pizzaToppings").text(toppings);
     $("#pizzaReceipt").show();
+    $("form#pizzaOrder").hide();
+
+    $("#placeAnotherOrder").click(function() {
+      location.reload();
+    });
   });
 });
