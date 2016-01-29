@@ -14,7 +14,7 @@
       <p> <a href="https://www.google.com/maps">1234 Pizza Place, Portland 97210</a> | <span id="highlight">503-123-4567</span> | <a href="mailto:pizza@pizzapronto.com">pizza@pizzapronto.com</a></p>
     </div>
     <div class="row">
-      <div id="sidebar" class="col-md-2, col-sm-2">
+      <div class="col-md-2, col-sm-2">
       </div>
       <div class="col-md-8, col-sm-8">
         <form id="pizzaOrder">
@@ -69,14 +69,19 @@
         </form>
         <div id="receipt">
           <h2>Pizza Pronto</h2>
+          <hr>
           <h3>Order Confirmation<p>
-          <h4>Quantity: <span id="pizzaQuantity"></span></span></h4>
-          <h4>Size: <span id="pizzaSize"></span></span></h4>
-          <h4>Toppings: <span id="pizzaToppings"><span></h4>
-          <h3>Total: $<span class="pizzaPrice"></span></h3>
-        <button id="placeAnotherOrder" type="button" class="btn btn-default">Place Another Order</button>
+            <ul>
+              <li><h4><span id="pizzaQuantity"></span> <span id="pizzaSize"></span> pizzas</h4></li>
+              <li><h4>Toppings: <span id="pizzaToppings"><span></h4></li>
+            </ul>
+          <h3 class="category">Total: $<span class="pizzaPrice"></span></h3>
+          <hr>
+        <button id="placeAnotherOrder" type="button" class="btn">Place Another Order</button>
+
+
         </div>
-      <div id="sidebar" class="col-md-2, col-sm-2"></div>
+      <div class="col-md-2, col-sm-2"></div>
       </div>
       </div>
     </div>
