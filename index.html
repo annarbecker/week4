@@ -25,8 +25,8 @@
             <label for="size">Select a size</label>
             <select class="form-control" id="size">
               <option value="1">Small</option>
-              <option value="2">Medium</option>
-              <option value="3">Large</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
             </select>
           </div>
           <p><strong>Pick your toppings</strong></p>
@@ -65,9 +65,17 @@
           </div>
         </form>
         <hr>
+        <div id="receipt">
+          <h2>Pizza Place</h2>
+          <h3>Order Confirmation<p>
+          <h4>Quantity: <span id="pizzaQuantity"></span></span></h4>
+          <h4>Size: <span id="pizzaSize"></span></span></h4>
+          <h4>Toppings: <span id="pizzaToppings"><span></h4>
+
+        </div>
         <div id="result">
           <p><span id="pizza-order"></span></p>
-          <h2>$<span class="pizzaPrice"></span></h2>
+          <h3>Total: $<span class="pizzaPrice"></span></h3>
         </div>
       </div>
     </div>
