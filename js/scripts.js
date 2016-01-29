@@ -36,6 +36,7 @@ Pizza.prototype.fullOrder = function () {
 function Contact(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
+  // this.order = [];
 }
 
 Contact.prototype.fullName = function() {
@@ -44,6 +45,8 @@ Contact.prototype.fullName = function() {
 
 
 $(document).ready(function() {
+  // contact form for user info
+
   $("form#pizzaOrder").submit(function(event) {
     var quantity = parseInt($("input#quantity").val());
     var size = $("select#size").val();
