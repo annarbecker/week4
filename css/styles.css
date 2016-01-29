@@ -8,25 +8,27 @@ body {
   text-align: center;
   background-color: #FF7471;
   color: white;
+  padding-top: 15px;
 }
 
 .jumbotron p{
   font-size: 16px;
+  color: #7F3A39;
 }
 
 #highlight:hover {
-  color: black;
+  color: white;
   cursor: pointer;
 }
 
 a {
-  color: white;
+  color: #7F3A39;
   cursor: pointer;
   cursor: pointer;
 }
 
 a:hover {
-  color: black;
+  color: white;
   cursor: pointer;
   text-decoration: none;
 }
@@ -47,4 +49,19 @@ form {
   background-color: white;
   padding: 40px;
   border-radius: 5px;
+}
+
+#pizzaReceipt {
+  float: left;
+}
+
+img {
+  float:right;
+}
+
+#pickUp {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  color: #FF7471;
 }

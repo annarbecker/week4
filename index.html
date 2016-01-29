@@ -18,10 +18,10 @@
       </div>
       <div class="col-md-8, col-sm-8">
         <form id="pizzaOrder">
-          <h2>Place your pizza order</h2>
+          <h1>Place your pizza order</h1>
           <hr>
           <div class="form-group">
-            <label for="quantity">Enter the number of pizzas to order</label>
+            <label for="quantity">Enter number of pizzas to order</label>
             <input id="quantity" type="number" placeholder="number of pizzas">
           </div>
           <div class="form-group">
@@ -68,22 +68,22 @@
           </div>
         </form>
         <div id="receipt">
-          <h2>Pizza Pronto</h2>
+          <h1>Enjoy!</h1>
           <hr>
-          <h3>Order Confirmation<p>
+          <p id="pickUp">Your order will be ready for pick-up in 15 minutes</p>
+          <h3>Pizza Pronto Order #: 123PP<span class="pizzaQuantity"></span></h3>
             <ul>
-              <li><h4><span id="pizzaQuantity"></span> <span id="pizzaSize"></span> pizzas</h4></li>
+              <li><h4><span class="pizzaQuantity"></span> <span id="pizzaSize"></span> pizzas</h4></li>
               <li><h4>Toppings: <span id="pizzaToppings"><span></h4></li>
             </ul>
           <h3 class="category">Total: $<span class="pizzaPrice"></span></h3>
           <hr>
         <button id="placeAnotherOrder" type="button" class="btn">Place Another Order</button>
-
-
         </div>
       <div class="col-md-2, col-sm-2"></div>
       </div>
       </div>
+
     </div>
   </bod>
   </html>
