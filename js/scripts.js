@@ -36,7 +36,6 @@ Pizza.prototype.negQuantity = function() {
 $(document).ready(function() {
 
   $("form#pizzaOrder").submit(function(event) {
-
     var quantity = parseInt($("input#quantity").val());
     var size = $("select#size").val();
     var toppings = [];
@@ -57,13 +56,12 @@ $(document).ready(function() {
 
     toppings = toppings.join(", ");
 
-    $(".pizzaPrice").text(orderPrice);
     $("#receipt").show();
+    $("form#pizzaOrder").hide();
+    $(".pizzaPrice").text(orderPrice);
     $(".pizzaQuantity").text(quantity);
     $("#pizzaSize").text(size);
     $("#pizzaToppings").text(toppings);
-    $("#pizzaReceipt").show();
-    $("form#pizzaOrder").hide();
 
     $("#placeAnotherOrder").click(function() {
       location.reload();
