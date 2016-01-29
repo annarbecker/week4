@@ -5,4 +5,9 @@ describe('Pizza', function () {
     expect(testPizza.size).to.equal(2);
     expect(testPizza.toppings).to.be.a("array");
     });
+
+  it("will calculate a price based on the customer's order", function() {
+    var testPizza = new Pizza(2, 2, ["pepperoni", "cheese", "olives"]);
+    expect(testPizza.price()).to.equal(26);
   });
+});
